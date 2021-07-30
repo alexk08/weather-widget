@@ -1,0 +1,13 @@
+.settings-menu {
+  display: none;
+
+  &--opened {
+    display: block;
+  }
+
+  &__title {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+}

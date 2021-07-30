@@ -1,0 +1,29 @@
+.adding-form {
+  &__input.form-group {
+    width: 200px;
+  }
+
+  form {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__repeat {
+    display: none;
+
+    &--shown {
+      display: block;
+    }
+  }
+
+  &__submit {
+    width: 40px;
+  }
+
+  & label {
+    font-weight: 500;
+    margin: 15px 0 10px;
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,15 @@
+.settings-button {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  justify-content: center;
+  width: 20px;
+
+  position: absolute;
+  top: 5px;
+  right: 3px;
+
+  &--disable {
+    display: none;
+  }
+}

@@ -1,0 +1,30 @@
+.location-item {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+
+  padding: 10px;
+  min-height: 70px;
+
+  &__name {
+    margin-left: 10px;
+  }
+
+  &__delete {
+    margin-left: auto;
+    font-size: 24px;
+  }
+
+  &__drag-button {
+    font-size: 21px;
+  }
+
+  background-color: #f0f0f0;
+
+  &__drag-button {
+    cursor: move !important; /* fallback if grab cursor is unsupported */
+    cursor: grab !important;
+    cursor: -moz-grab !important;
+    cursor: -webkit-grab !important;
+  }
+}

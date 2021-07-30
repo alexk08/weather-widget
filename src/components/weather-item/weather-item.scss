@@ -1,0 +1,72 @@
+.weather-item {
+  display: flex;
+  flex-direction: column;
+  color: var(--bs-dark);
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  &__other-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__description {
+    margin: 10px 0;
+  }
+
+  &__main-info {
+    display: flex;
+    align-items: center;
+
+    & > * {
+      margin-left: 10px;
+    }
+  }
+
+  &__temperature {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--bs-gray-dark);
+  }
+
+  &__location {
+    width: 80%;
+    font-weight: 700;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+
+    & > * {
+      width: 50%;
+    }
+  }
+
+  &__description,
+  &__other-info,
+  &__location {
+    padding-left: 3px;
+  }
+
+  &__wind,
+  &__pressure {
+    display: flex;
+    align-items: center;
+  }
+
+  &__visibility {
+    margin-bottom: 5px;
+  }
+
+  &__wind {
+    display: flex;
+
+    & > * {
+      margin-right: 5px;
+    }
+  }
+}

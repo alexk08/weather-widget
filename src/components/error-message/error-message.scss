@@ -1,0 +1,13 @@
+.error-message {
+  color: var(--bs-danger);
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+
+  &--warning {
+    color: var(--bs-warning);
+  }
+}
