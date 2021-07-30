@@ -7,12 +7,12 @@ const ERROR_MESSAGE = [
 ];
 
 const URL_REQUEST = {
-  PREFIX: "http://api.openweathermap.org/data/2.5/weather?",
+  PREFIX: "https://api.openweathermap.org/data/2.5/weather?",
   SUFFIX: "&units=metric&APPID=650926f8530286968de60a6a08b0c2d5",
 };
 
 const URL_ICON = {
-  PREFIX: "http://openweathermap.org/img/wn/",
+  PREFIX: "https://openweathermap.org/img/wn/",
   SUFFIX: "@2x.png",
 };
 
