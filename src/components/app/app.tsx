@@ -56,10 +56,6 @@ const App: React.FC = () => {
     return [];
   }, []);
 
-  const mountedWithSavedData: boolean = useMemo(() => {
-    return Boolean(savedWeatherData.length);
-  }, [savedWeatherData]);
-
   useEffect(() => {
     if (!savedWeatherData.length) {
       getGeolocation(setGeoLocation, setErrorState, setLoadingState);
@@ -104,9 +100,9 @@ const App: React.FC = () => {
     const idArr: number[] = weatherDataList.map((dataItem) => dataItem.id);
 
     errorState ||
-      mountedWithSavedData ||
+      savedWeatherData.length ||
       localStorage.setItem(STORAGE, JSON.stringify(idArr));
-  }, [weatherDataList, errorState, mountedWithSavedData]);
+  }, [weatherDataList, errorState, savedWeatherData]);
 
   useEffect(() => {
     let timer: null | ReturnType<typeof setTimeout> = null;
